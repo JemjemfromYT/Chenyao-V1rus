@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background: black;
+    color: red;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+#screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 90%;
+}
+
+.glitch {
+    animation: glitch 0.1s infinite;
+}
+
+@keyframes glitch {
+    0% { background: black; color: red; }
+    50% { background: red; color: black; }
+    100% { background: black; color: red; }
+}
