@@ -29,6 +29,14 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
+        button {
+            margin: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +48,8 @@
     <div id="imageContainer">
         <img id="mainImage" src="chenyao.jpeg" onclick="addImage()" alt="Tap me">
     </div>
+    <button onclick="playAudio()">Play Music</button>
+    <button onclick="window.location.href='https://www.google.com'">Go to Google</button> 
     <script>
         const audio = document.getElementById("myAudio");
 
