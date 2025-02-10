@@ -32,16 +32,20 @@
     </style>
 </head>
 <body>
+    <audio id="myAudio" autoplay loop>
+        <source src"erika" type="mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <div id="instruction">Tap the picture</div>
     <div id="imageContainer">
         <img id="mainImage" src="chenyao.jpeg" onclick="addImage()" alt="Tap me">
     </div>
-
     <script>
         function addImage() {
             const container = document.getElementById('imageContainer');
             const img = document.createElement('img');
-            img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Lcs2BlUjOEdVTNEOKiQAELSZN9E4a-S24zQUau9rRi1P3YCsOWRWfmEa&s=10'; // Replace with your JPEG image URL
+            img.src = 'chenyao.jpeg'; 
             img.style.top = Math.random() * (container.clientHeight - 100) + 'px';
             img.style.left = Math.random() * (container.clientWidth - 100) + 'px';
             img.onclick = addImage;
