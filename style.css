@@ -1,0 +1,13 @@
+button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:nth-child(3) { /* Select the "Play Music" button */
+    margin-top: 20px; /* Add more space above the button */
+}
+
