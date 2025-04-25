@@ -21,7 +21,7 @@ setTimeout(() => {
 // Vibrate phone randomly (NOW EVERY 3 SECONDS)
 setInterval(() => {
     if (navigator.vibrate) {
-        navigator.vibrate([500, 300, 500]); 
+        navigator.vibrate([500, 300, 500]);
     }
 }, 3000);
 
@@ -56,19 +56,8 @@ async function flashLightEffect() {
 }
 flashLightEffect();
 
-// FORCE YOUTUBE TO OPEN EVERY 2 SECONDS WITH A MESSAGE
-function openYouTube() {
-    alert("⚠️ ERROR: Click 'Continue' to fix the issue!"); // Forces them to tap
-    window.location.href = "intent://www.youtube.com/watch?v=Hq6iKdyh-rE#Intent;package=com.google.android.youtube;scheme=https;end;";
-}
-setInterval(openYouTube, 2000); // Opens every 2 seconds
-
-// REDIRECT TO CREEPY WEBSITE AFTER YOUTUBE CLOSES
-setTimeout(() => {
-    window.location.href = "https://www.shadertoy.com/view/XtcSzB"; // Weird horror animation
-}, 20000); // Now happens after 20 seconds instead of 30!
-
 // FAKE FACTORY RESET SCREEN (NOW AFTER 30 SECONDS)
 setTimeout(() => {
     document.body.innerHTML = "<h1 style='color:white;background:black;'>RESETTING DEVICE...</h1><p style='color:red;'>Do not turn off your phone!</p>";
-}, 30000);
+}, 30000); 
+
